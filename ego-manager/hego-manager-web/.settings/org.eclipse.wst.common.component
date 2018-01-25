@@ -13,6 +13,9 @@
         <dependent-module archiveName="hego-manager-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hego-manager-pojo/hego-manager-pojo">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="ego-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ego-common/ego-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="hego-manager-web"/>
         <property name="java-output-path" value="/hego-manager-web/target/classes"/>
     </wb-module>
