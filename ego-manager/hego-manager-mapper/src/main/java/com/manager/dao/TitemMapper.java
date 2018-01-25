@@ -1,5 +1,7 @@
 package com.manager.dao;
 
+import java.util.List;
+
 import com.manager.bean.Titem;
 
 public interface TitemMapper {
@@ -14,4 +16,6 @@ public interface TitemMapper {
     int updateByPrimaryKeySelective(Titem record);
 
     int updateByPrimaryKey(Titem record);
+
+	List<Titem> getItemList();
 }

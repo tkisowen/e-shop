@@ -17,6 +17,13 @@
   <sql id="Base_Column_List" >
     id, title, sell_point, price, num, barcode, image, cid, status, created, updated
   </sql>
+  
+  <select id="getItemList" resultMap="BaseResultMap">
+  	select 
+    <include refid="Base_Column_List" />
+    from tb_item
+  </select>
+  
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />
